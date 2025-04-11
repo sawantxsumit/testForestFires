@@ -1,0 +1,12 @@
+prefix=C:/Users/sawan/OneDrive/Desktop/mlProject/env/Library
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: libecpg
+Description: PostgreSQL libecpg library
+URL: https://www.postgresql.org/
+Version: 17.4
+Requires.private: libpgtypes, libpq
+Libs: -L${libdir} -lecpg
+Libs.private: -lws2_32 -L${libdir} -lpgport C:/Users/sawan/OneDrive/Desktop/mlProject/env/Library/lib/libcrypto.lib C:/Users/sawan/OneDrive/Desktop/mlProject/env/Library/lib/libssl.lib -lpgcommon C:/Users/sawan/OneDrive/Desktop/mlProject/env/Library/lib/z.lib C:/Users/sawan/OneDrive/Desktop/mlProject/env/Library/lib/zstd.lib C:/Users/sawan/OneDrive/Desktop/mlProject/env/Library/lib/libcrypto.lib C:/Users/sawan/OneDrive/Desktop/mlProject/env/Library/lib/libssl.lib C:/Users/sawan/OneDrive/Desktop/mlProject/env/Library/lib/z.lib C:/Users/sawan/OneDrive/Desktop/mlProject/env/Library/lib/zstd.lib C:/Users/sawan/OneDrive/Desktop/mlProject/env/Library/lib/z.lib C:/Users/sawan/OneDrive/Desktop/mlProject/env/Library/lib/zstd.lib C:/Users/sawan/OneDrive/Desktop/mlProject/env/Library/lib/z.lib C:/Users/sawan/OneDrive/Desktop/mlProject/env/Library/lib/zstd.lib C:/Users/sawan/OneDrive/Desktop/mlProject/env/Library/lib/z.lib C:/Users/sawan/OneDrive/Desktop/mlProject/env/Library/lib/zstd.lib
+Cflags: -I${includedir}
